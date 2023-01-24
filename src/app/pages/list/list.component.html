@@ -1,0 +1,23 @@
+<p>Listya de productos</p>
+
+
+<table>
+
+    <thead>
+        <th>Nommbre</th>
+        <th>Costo</th>
+        <th>Imagen</th>
+        <th>Tools</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let prod of farmacia">
+            <td>{{ prod.producto }}</td>
+            <td>S/. {{ prod.costo }}</td>
+            <td><img src="{{ prod.foto }}" alt="" width="100"></td>
+            <td>
+                <button class="bg-red-500 tex-white px-4 py-2 rounded-full" (click)="onClickDelete(prod)">Elilminar</button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>

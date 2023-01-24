@@ -1,0 +1,29 @@
+<div class="w-2/5 bg-violet-200 p-5 rounded-xl mx-auto mt-10">
+    <form [formGroup]="formRegister">
+        <div class="bg-slate-100 rounded-lg p-6 my-4">
+            <div><label for="producto">Producto</label></div>
+            <div>
+                <input type="text" formControlName="producto" name="producto" class="rounded-lg border border-solid border-slate-500 px-4 py-2">
+            </div>
+        </div>
+        
+        <div class="bg-slate-100 rounded-lg p-6 my-4">
+            <div><label for="costo">Costo</label></div>
+            <div>
+                <input type="text" formControlName="costo" name="costo" class="rounded-lg border border-solid border-slate-500 px-4 py-2">
+            </div>
+        </div>
+
+        <div class="bg-slate-100 rounded-lg p-6 my-4">
+            <div><label for="foto">Foto</label></div>
+            <div>
+                <input type="text" formControlName="foto" name="foto" class="rounded-lg border border-solid border-slate-500 px-4 py-2">
+            </div>
+        </div>
+
+        <div>
+            <button class="rounded-lg bg-violet-400 px-4 py-2" (click)="onSubmit()">Registrar</button>
+        </div>
+
+    </form>
+</div>
